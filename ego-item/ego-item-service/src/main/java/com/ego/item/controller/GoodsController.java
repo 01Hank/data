@@ -64,7 +64,7 @@ public class GoodsController {
         return ResponseEntity.ok(goodsService.findSkuBySpuId(spuId));
     }
 
-//1
+
     @GetMapping("/spu/{id}")
     public SpuBO queryGoodsById(@PathVariable("id") Long spuId){
         return goodsService.queryGoodsById(spuId);
